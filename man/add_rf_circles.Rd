@@ -11,21 +11,23 @@ add_rf_circles(temp_plot, rf_circle = 0.4, white_shift = 0,
 \arguments{
 \item{temp_plot}{ggplot object returend by \code{create_temperature_bar_plot}}
 
-\item{rf_circle}{doubles that is the y height at which the rainfall
-circles are plotted (default is 0.4)}
+\item{rf_circle}{a numeric value that controls the height at which the rainfall
+circles are plotted against the temperature bars (default is 0.4)}
 
-\item{white_shift}{double that can shift the height of the circles.
+\item{white_shift}{a numeric value that can shift the height of the circles.
 (default is 0) This parameter is slightly different from the rf_circle as it
 relates to the shifting of the entire plot, not just the circles.}
 
-\item{rf_col}{colour for plotting the rainfall circles (defult is
+\item{rf_col}{colour for plotting the rainfall circles (default is
 "lightgoldenrod2")}
 
-\item{rf_alpha}{double that is the transparency of the circles
+\item{rf_alpha}{numeric value between 0 and 1 giving the transparency of the circles
 (default is 0.5)}
+
+\item{rf_size_range}{a vector of two numeric values that does what exactly ???}
 }
 \value{
-temp_plot with added circles to show rainfall
+returns the input of \code{temp_plot} with circles added to show rainfall
 }
 \description{
 Adds the rainfall circles to the temperature bar plot

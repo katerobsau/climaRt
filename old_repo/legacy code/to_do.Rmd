@@ -1,0 +1,58 @@
+---
+title: "Progress Notes"
+author: "Kate Saunders"
+date: "17/05/2019"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+* (DONE) Rescale rainfall circles (< 0.5 ignore), focus on bigger rain days (max ~ 45 mm)
+
+* This is for printing so need to ensure it will work on a larger scale, and radiuses will be of the correct size
+
+* (DONE) Code to generate differnt years (1910, 2009)
+
+* Add text - Melbourne (location), 2009 (year), acknowledgement for the design (lower corner) ? Heading  (not Middle)
+
+* Also have issues of scale range for bar fill
+
+\textbf{Decisions}
+
+* Rain (inside or out)
+
+(Thursday 8 pm your time, 12 pm noon)
+
+<!-- -------------------------------------------------------- -->
+
+\textbf{Ideally}
+
+* (Fixed it!!) Want to remove the white bars so you can't see the circle 
+
+\textit{Tried writing code to do this using factors, but it didn't work. Geom_segment offered a solution!}
+
+* Get data from rnoaa 
+
+\textit{Done this for Melbourne, but haven't automated it for other places}
+
+* GiF 
+
+\textit{Got plot to generate all years}
+
+* Potential to use climate sims in future (down the track)
+
+* Weather climate and society (Peer reviewed journal)
+
+* Blog about it / conversation
+
+\texbf{Hours logged:}
+16/05/19 2.5 hours to get a draft image up and running
+17/05/19 1 hour skype meeting
+20/05/19 7 hours - fixed rainfall circle scaling, rescaled the temperature axes for consistency across years, experimented with factors to try and fix white space
+21/05/19 6 hours - got colour scale working for bars, editted color scale so it sat correctly, fixed white space, cleaned code for use
+
+

@@ -2,9 +2,7 @@
 % Please edit documentation in R/add_angle.R
 \name{add_angle}
 \alias{add_angle}
-\title{Adds a new column called angle. The angle is given by
-$$ angle  = year di(# days in year)*360$$
-This anlge is for plotting later.}
+\title{Add a new column called angle}
 \usage{
 add_angle(stn_data)
 }
@@ -13,10 +11,18 @@ add_angle(stn_data)
 date}
 }
 \value{
-station data with an addition column called angle
+returns the \code{stn_data} input with an addition column called angle
 }
 \description{
-Adds a new column called angle. The angle is given by
-$$ angle  = year di(# days in year)*360$$
-This anlge is for plotting later.
+Adds a new column called angle to the input data frame. The angle is given by
+(day in year)/(# days in year)*360.
+This angle is used later in plotting functions.
+}
+\examples{
+date_seq = seq(lubridate::as_date("2019-01-01"),
+               lubridate::as_date("2019-01-31"),
+               by = "days")
+stn_data = data.frame(date = date_seq)
+add_angle(stn_data)
+
 }

@@ -2,7 +2,9 @@
 % Please edit documentation in R/add_centre_text.R
 \name{add_centre_text}
 \alias{add_centre_text}
-\title{Adds text to the centre of the circular bar plot}
+\title{Adds text to the centre of the circular bar plot. (Haven't automated
+the text positioning here well. Would like to update this function
+in future.)}
 \usage{
 add_centre_text(flower_plot, stn_name, year_val)
 }
@@ -18,7 +20,9 @@ output of \code{make_flower()}}
 the flower_plot object with additional text in the centre
 }
 \description{
-Adds text to the centre of the circular bar plot
+Adds text to the centre of the circular bar plot. (Haven't automated
+the text positioning here well. Would like to update this function
+in future.)
 }
 \examples{
 set.seed(1)
@@ -38,7 +42,7 @@ temp_plot = create_temperature_bar_plot(plot_data, mid_quantiles,
 climate_plot = add_rf_circles(temp_plot)
 flower_plot <- make_flower(climate_plot)
 add_centre_text(flower_plot,
- stn_name = "Made Up Station",
+ stn_name = "Lorem Ipsum",
    year_val = 9999)
 
 }
